@@ -13,3 +13,6 @@ We committed changes to mostly the javascript file but also adding extra time bl
 - Dynamic changing date 
 - Ability to save data when refreshed
 
+https://armond-guze.github.io/work-day-calendar/
+
+![work-day-calendar picture](<screenshot of work-calendar.png>)
