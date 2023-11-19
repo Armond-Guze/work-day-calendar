@@ -15,4 +15,5 @@ We committed changes to mostly the javascript file but also adding extra time bl
 
 https://armond-guze.github.io/work-day-calendar/
 
-![work-day-calendar picture](Assets/screenshot of work-calendar.png)
+![screenshot of work-calendar](https://github.com/Armond-Guze/work-day-calendar/assets/88688052/c33a7a2c-6919-46b6-b419-2d8728022fa8)
+
