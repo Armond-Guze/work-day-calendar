@@ -1,6 +1,4 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// selects values of time blocks
 var nineOclock = document.getElementById("hour-9");
 var tenOclock = document.getElementById("hour-10");
 var elevenOclock = document.getElementById("hour-11");
@@ -17,13 +15,26 @@ var currentDateElement = document.getElementById("currentDay");
 var currentDate = dayjs();
 currentDateElement.textContent = currentDate.format("dddd MMMM D, YYYY");
 
+// saves data even after refreshed
+
+$(".time-block").each(function() {
+    var timeBlock = $(this).attr("id");
+
+    var storedValue = localStorage.getItem(timeBlock);
+    if (storedValue !== null) {
+        $(this).find(".description").val(storedValue);
+    }
+  })
+
 // prevents page from auto refreshing when clicked
   $(".saveBtn").on("click", function (event) {
   event.preventDefault();
 
+  // selects values 
+
   var textValues = $(this).siblings(".description").val();
   var timeBlock = $(this).parent().attr("id");
 
-  // Save user input in local storage
+  // save user input in local storage
   localStorage.setItem(timeBlock, textValues);
 });
