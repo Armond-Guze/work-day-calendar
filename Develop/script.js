@@ -11,6 +11,16 @@ var threeOclock = document.getElementById("hour-3");
 var fourOclock = document.getElementById("hour-4");
 var Oclock = document.getElementById("hour-5");
 
+var nineOclockStorage = localStorage.getItem("hour-9");
+var tenOclockStorage = localStorage.getItem("hour-10");
+var elevenOclockStorage = localStorage.getItem("hour-11");
+var twelveOclockStorage = localStorage.getItem("hour-12");
+var oneOclockStorage = localStorage.getItem("hour-1");
+var twoOclockStorage = localStorage.getItem("hour-2");
+var threeOclockStorage = localStorage.getItem("hour-3");
+var fourOclockStorage = localStorage.getItem("hour-4");
+var OclockStorage = localStorage.getItem("hour-5");
+
 var currentDateElement = document.getElementById("currentDay");
 var currentDate = dayjs();
 currentDateElement.textContent = currentDate.format("dddd MMMM D, YYYY");
